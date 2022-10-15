@@ -15,30 +15,7 @@ public class LowestCommonAncestorSolution {
        return run(index1_ancestor, index2_ancestor);
 
     }
-//    public static int run1(int index1, int index2){
-//        if(index1 == 1 || index2 == 1){
-//            return 1;
-//        } else if(index1/2 == index2/2){
-//            return index1/2;
-//        }
-//       int commonAncestor = 1;
-//       int[] ancestors = new int[1000001];
-//       ancestors[1] = commonAncestor;
-//       for(int index = 2; index<=1000000; index++){
-//           ancestors[index] = index/2;
-//       }
-//       int ancestor1 = ancestors[index1];
-//       int ancestor2 = ancestors[index2];
-//
-//       while(ancestor1 != ancestor2){
-//           ancestor1 = ancestors[ancestor1];
-//           ancestor2 = ancestors[ancestor2];
-//           if(ancestor1 == ancestor2){
-//               commonAncestor= ancestor1;
-//           }
-//       }
-//       return commonAncestor;
-//    }
+
     public static int run2(int index1, int index2){
         int commonAncestor = 1;
         int index1Ancestor = index1/2;
